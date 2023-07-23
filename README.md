@@ -32,6 +32,9 @@ The server will be accessible at `http://localhost:8080`.
 2. Run the Docker container: Run `docker run -p 8080:8080 cparks1/star-wars-proxy-api:latest`
 3. The Docker container should now be running and you can now access the API. If you want to stop running the Docker container, press `Ctrl + C` in the terminal where the container is running.
 
+### Building a Docker image of the proxy API
+From the root of the project directory, run the command `docker build -t star-wars-proxy-api .`
+
 ## API Endpoints
 
 ### Get Character Info

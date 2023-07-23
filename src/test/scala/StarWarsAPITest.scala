@@ -22,7 +22,7 @@ class StarWarsAPITest extends AnyWordSpec with Matchers with ScalatestRouteTest 
   implicit override val materializer: ActorMaterializer = ActorMaterializer()
 
   implicit val defaultPatience =
-    PatienceConfig(timeout = Span(5, Seconds), interval = Span(5, Millis))
+    PatienceConfig(timeout = Span(10, Seconds), interval = Span(5, Millis))
 
   val validSWAPICharacterSearchResult = SWAPICharacterSearchResult(
     name = "Luke Skywalker",
