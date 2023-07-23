@@ -33,7 +33,8 @@ The server will be accessible at `http://localhost:8080`.
 3. The Docker container should now be running and you can now access the API. If you want to stop running the Docker container, press `Ctrl + C` in the terminal where the container is running.
 
 ### Building a Docker image of the proxy API
-From the root of the project directory, run the command `docker build -t star-wars-proxy-api .`
+1. From the root of the project directory, run the command `sbt assembly`
+2. In the same path, run `docker build -t star-wars-proxy-api .`
 
 ## API Endpoints
 
