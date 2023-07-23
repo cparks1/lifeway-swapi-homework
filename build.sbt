@@ -16,8 +16,15 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-spray-json" % AkkaHttpVersion,
   "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % Test,
   "com.typesafe.akka" %% "akka-http-testkit" % AkkaHttpVersion % Test,
-  "org.scalatest" %% "scalatest" % ScalaTestVersion % Test
+  "org.scalatest" %% "scalatest" % ScalaTestVersion % Test,
+  "ch.megard" %% "akka-http-cors" % "1.2.0"
 )
+
+dependencyOverrides ++= Seq(
+  "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
+  "com.typesafe.akka" %% "akka-http-spray-json" % AkkaHttpVersion
+)
+
 
 assembly / assemblyJarName := "star-wars-proxy-api.jar"
 
