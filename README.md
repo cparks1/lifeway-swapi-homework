@@ -29,7 +29,7 @@ The server will be accessible at `http://localhost:8080`.
 
 ## Running the API proxy server via Docker
 1. Pull the Docker image: Run `docker pull ghcr.io/cparks1/star-wars-proxy-api:<latest>`, where `latest` is the latest version of that package.
-2. Run the Docker container: Run `docker run -p 8080:8080 cparks1/star-wars-proxy-api:<latest>`, where `latest` is the latest version of that package.
+2. Run the Docker container: Run `docker run -p 8080:8080 ghcr.io/cparks1/star-wars-proxy-api:<latest>`, where `latest` is the latest version of that package.
 3. The Docker container should now be running and you can now access the API at [http://localhost:8080](http://localhost:8080). If you want to stop running the Docker container, press `Ctrl + C` in the terminal where the container is running.
 
 ### Building a Docker image of the proxy API
